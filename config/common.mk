@@ -1,4 +1,4 @@
- DARKCYANKAT_VERSION := cm-$(PRODUCT_VERSION_MAJOR)-$(shell date +%Y%m%d)-$(subst cm_,,$(TARGET_PRODUCT))
+ DARKCYANKAT_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date +%Y%m%d)-$(subst cm_,,$(TARGET_PRODUCT))
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.dck.version=$(DARKCYANKAT_VERSION)
