@@ -3,5 +3,5 @@
  DK_VERSION := $(PLATFORM_VERSION)-$(DK_RELEASE_TYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.dk.version=$(ROM_VERSION)
-
+    ro.dk.version=$(ROM_VERSION) \
+    ro.dk.cm.version=12
