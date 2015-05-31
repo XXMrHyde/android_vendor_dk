@@ -4,4 +4,5 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     DKLauncher \
     Eleven \
-    LockClock
+    LockClock \
+    Terminal
