@@ -1,11 +1,3 @@
-# General parts of the OTA update and changelog uri
-# GENERAL_UPDATE_URI_PART := http://get.darkkat-rom.net/
-# GENERAL_CHANGELOG_URI_PART := http://changelog.darkkat-rom.net/
-
-# PRODUCT_PROPERTY_OVERRIDES += \
-#     dk.update.uri=$(GENERAL_UPDATE_URI_PART) \
-#     dk.changelog.uri=$(GENERAL_CHANGELOG_URI_PART)
-
 # Sounds
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Playa.ogg \
@@ -24,12 +16,12 @@ PRODUCT_COPY_FILES += \
     vendor/dk/prebuilt/bin/blacklist:system/addon.d/blacklist
 
 # init.d support
-PRODUCT_COPY_FILES += \
-    vendor/dk/prebuilt/bin/sysinit:system/bin/sysinit
+#PRODUCT_COPY_FILES += \
+#    vendor/dk/prebuilt/bin/sysinit:system/bin/sysinit
 
 # Init script file with DarkKat extras
-PRODUCT_COPY_FILES += \
-    vendor/dk/prebuilt/etc/init.local.rc:root/init.dk.rc
+#PRODUCT_COPY_FILES += \
+#    vendor/dk/prebuilt/etc/init.local.rc:root/init.dk.rc
 
 # DarkKat Changelog
 # ifneq (,$(findstring RELEASE,$(DK_RELEASE_TYPE)))
@@ -49,9 +41,9 @@ PRODUCT_COPY_FILES += \
 # endif
 
 # Additional packages
--include vendor/dk/config/packages.mk
+#-include vendor/dk/config/packages.mk
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/dk/overlay
+#PRODUCT_PACKAGE_OVERLAYS += vendor/dk/overlay
 
 # Versionning
 -include vendor/dk/config/version.mk
