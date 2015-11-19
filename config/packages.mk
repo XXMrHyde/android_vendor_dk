@@ -1,2 +1,4 @@
 # Additional packages
-PRODUCT_PACKAGES += DKLauncher
+PRODUCT_PACKAGES += \
+    DKLauncher \
+    LockClock
