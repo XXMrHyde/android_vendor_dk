@@ -1,5 +1,5 @@
 # Versioning of the ROM
- ROM_VERSION := $(BUILD_ID)-$(shell date +%Y%m%d)-$(DK_RELEASE_TYPE)-$(subst dk_,,$(TARGET_PRODUCT))
+ ROM_VERSION := $(BUILD_ID)-$(shell date +%Y%m%d)-$(DK_BUILD_TYPE)-$(subst dk_,,$(TARGET_PRODUCT))
  DK_BUILD_VERSION := $(BUILD_ID)-$(shell date +%Y%m%d)-$(subst dk_,,$(TARGET_PRODUCT))
 
 PRODUCT_PROPERTY_OVERRIDES += \
