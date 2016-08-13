@@ -1,6 +1,7 @@
 # Additional packages
-PRODUCT_PACKAGES += Terminal
-#     AudioFX \
+PRODUCT_PACKAGES += \
+     AudioFX \
+     Eleven \
+     Terminal
 #     DKLauncher \
 #     DKWeatherService \
-#     Eleven \
